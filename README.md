@@ -63,7 +63,19 @@ python meltscan.py
 
 ---
 
+<<<<<<< HEAD
 ### 🚀 Execução Rápida
+=======
+## Executando no Linux
+
+Para varreduras SYN e UDP, é necessário rodar como root:
+
+```bash
+sudo python meltscan.py
+```
+
+---
+>>>>>>> 22a7004efd8707f432bb59383bc00443f343f5d8
 
 ## Executando no Windows
 
@@ -71,6 +83,7 @@ python meltscan.py
 python meltscan.py
 ```
 
+<<<<<<< HEAD
 ## Executando no Linux
 
 Para varreduras SYN e UDP, é necessário rodar como root:
@@ -134,6 +147,8 @@ python meltscan_gui.py
 6. **Visualize os resultados na tabela com cores indicativas.**
 7. **Exporte os resultados usando o menu Arquivo → Exportar TXT/CSV.**
 
+=======
+>>>>>>> 22a7004efd8707f432bb59383bc00443f343f5d8
 ---
 
 ## 📂 Exportação de Resultados
@@ -143,6 +158,7 @@ python meltscan_gui.py
 
 ---
 
+<<<<<<< HEAD
 ## 🎪 Presets Estilo Nmap
 
 O menu "Sistema" oferece três presets:
@@ -155,19 +171,41 @@ O menu "Sistema" oferece três presets:
 
 ## 📦 Compilação em Executável
 
+=======
+## 📦 Compilação em Executável
+
+Se quiser gerar um executável independente:
+
+---
+>>>>>>> 22a7004efd8707f432bb59383bc00443f343f5d8
 
 # Windows (.exe)
 
 ```bash
 pip install pyinstaller
+<<<<<<< HEAD
 pyinstaller --onefile --windowed meltscan_gui.py
 # Executável em: dist/meltscan_gui.exe
 ```
 
+=======
+pyinstaller --onefile meltscan.py
+```
+
+O executável será gerado em:
+
+```bash
+dist/meltscan.exe
+```
+
+---
+
+>>>>>>> 22a7004efd8707f432bb59383bc00443f343f5d8
 # Linux (binário ELF)
 
 ```bash
 pip install pyinstaller
+<<<<<<< HEAD
 pyinstaller --onefile meltscan_gui.py
 # Executável em: dist/meltscan_gui
 ```
@@ -189,6 +227,18 @@ sudo apt install python3-tk
 ```
 Scans SYN/UDP não funcionam:
 Execute com privilégios administrativos: sudo (Linux) ou como Administrador (Windows)
+=======
+pyinstaller --onefile meltscan.py
+```
+
+O executável será gerado em:
+
+```bash
+dist/meltscan
+```
+
+⚠️ Importante: o .exe só roda no Windows. No Linux, você precisa gerar o binário próprio.
+>>>>>>> 22a7004efd8707f432bb59383bc00443f343f5d8
 
 ---
 
@@ -207,6 +257,7 @@ Versão: 1.0
 
 ---
 
+<<<<<<< HEAD
 ## 📝 Exemplo Prático
 
 ```bash
@@ -230,9 +281,39 @@ python meltscan_gui.py
 ![Tela Inicial](imagens/MeltScan1.png)
 ![Tela de Login](imagens/MeltScan2.png)
 ![Tela de Eventos](imagens/MeltScan3.png)
+=======
+## 📝 Exemplo Prático de Uso
+
+Escaneando o localhost nas portas 22 e 80:
+1. **Execute o MeltScan:**
+
+```bash
+python meltscan.py
+```
+
+2. **No campo Alvo(s) digite:**
+
+```bash
+127.0.0.1 (Exemplo)
+```
+
+3. **No campo Portas digite:**
+
+```bash
+22,80 (Exemplo)
+```
+
+4. **Selecione TCP ou UDP e clique em Iniciar.**
+
+5. **Visualize os resultados e exporte em TXT ou CSV após a conclusão.**
+>>>>>>> 22a7004efd8707f432bb59383bc00443f343f5d8
 
 ---
 
 ## 📜 Licença
 
+<<<<<<< HEAD
 Este projeto está licenciado sob a licença MIT.
+=======
+Este projeto está licenciado sob a licença MIT.
+>>>>>>> 22a7004efd8707f432bb59383bc00443f343f5d8
