@@ -76,7 +76,7 @@ python meltscan.py
 Para varreduras SYN e UDP, é necessário rodar como root:
 
 ```bash
-sudo python3 meltscan_gui.py
+sudo python meltscan_gui.py
 ```
 
 ---
